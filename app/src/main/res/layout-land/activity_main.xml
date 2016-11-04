@@ -106,14 +106,12 @@
         android:onClick="onCheckboxClicked"/>
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:id="@+id/body_image"
         android:src="@drawable/body"
-        android:visibility="visible"
         android:layout_above="@+id/arms"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
         android:layout_below="@+id/textView" />
 
     <ImageView
@@ -123,7 +121,7 @@
         android:src="@drawable/eyes"
         android:visibility="invisible"
         android:layout_above="@+id/arms"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_below="@+id/textView"/>
     <ImageView
         android:layout_width="wrap_content"
@@ -132,7 +130,7 @@
         android:src="@drawable/nose"
         android:visibility="invisible"
         android:layout_above="@+id/arms"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_below="@+id/textView"/>
     <ImageView
         android:layout_width="wrap_content"
@@ -141,7 +139,7 @@
         android:src="@drawable/arms"
         android:visibility="invisible"
         android:layout_above="@+id/arms"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_below="@+id/textView"/>
     <ImageView
         android:layout_width="wrap_content"
@@ -150,7 +148,7 @@
         android:src="@drawable/mouth"
         android:visibility="invisible"
         android:layout_above="@+id/arms"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_below="@+id/textView"/>
     <ImageView
         android:layout_width="wrap_content"
@@ -159,7 +157,7 @@
         android:src="@drawable/shoes"
         android:visibility="invisible"
         android:layout_above="@+id/arms"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_below="@+id/textView"/>
     <ImageView
         android:layout_width="wrap_content"
@@ -168,7 +166,7 @@
         android:src="@drawable/ears"
         android:visibility="invisible"
         android:layout_above="@+id/arms"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_below="@+id/textView"/>
     <ImageView
         android:layout_width="wrap_content"
@@ -177,7 +175,7 @@
         android:src="@drawable/hat"
         android:visibility="invisible"
         android:layout_above="@+id/arms"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_below="@+id/textView"/>
     <ImageView
         android:layout_width="wrap_content"
@@ -186,7 +184,7 @@
         android:src="@drawable/mustache"
         android:visibility="invisible"
         android:layout_above="@+id/arms"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_below="@+id/textView"/>
     <ImageView
         android:layout_width="wrap_content"
@@ -195,7 +193,7 @@
         android:src="@drawable/glasses"
         android:visibility="invisible"
         android:layout_above="@+id/arms"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_below="@+id/textView"/>
     <ImageView
         android:layout_width="wrap_content"
@@ -204,6 +202,6 @@
         android:src="@drawable/eyebrows"
         android:visibility="invisible"
         android:layout_above="@+id/arms"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:layout_below="@+id/textView"/>
 </RelativeLayout>
