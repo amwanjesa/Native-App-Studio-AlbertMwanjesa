@@ -1,5 +1,6 @@
 package com.example.albert.albertpset1;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -16,7 +17,38 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
+    private void clearBoxes(){
+        CheckBox arms = (CheckBox) findViewById(R.id.arms);
+        unCheckBox(arms);
+
+        CheckBox ears = (CheckBox) findViewById(R.id.ears);
+        unCheckBox(ears);
+
+        CheckBox hat = (CheckBox) findViewById(R.id.hat);
+        unCheckBox(hat);
+
+        CheckBox brows = (CheckBox) findViewById(R.id.brows);
+        unCheckBox(brows);
+
+        CheckBox eyes = (CheckBox) findViewById(R.id.eyes);
+        unCheckBox(eyes);
+
+        CheckBox glass = (CheckBox) findViewById(R.id.glass);
+        unCheckBox(glass);
+
+        CheckBox mouth = (CheckBox) findViewById(R.id.mouth);
+        unCheckBox(mouth);
+
+        CheckBox nose = (CheckBox) findViewById(R.id.nose);
+        unCheckBox(nose);
+
+        CheckBox mustache = (CheckBox) findViewById(R.id.mustache);
+        unCheckBox(mustache);
+
+        CheckBox shoes = (CheckBox) findViewById(R.id.shoes);
+        unCheckBox(shoes);
     }
 
     public void onCheckboxClicked(View view) {
@@ -118,5 +150,19 @@ public class MainActivity extends AppCompatActivity {
                 break;
                 
         }
+    }
+
+    private void unCheckBox(CheckBox box){
+        if(box.isChecked()){
+            Log.d("Checkbox", Boolean.toString(box.isChecked()));
+            box.setChecked(false);
+        }
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        clearBoxes();
+        setContentView(R.layout.activity_main);
     }
 }
